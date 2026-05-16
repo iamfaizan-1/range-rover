@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* navbar */
+
+.header{
+    padding: 0px 30px;
+}
+
+.heroImage{
+    background-image: url("./assets/range\ hero.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+}
+
