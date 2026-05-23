@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         
@@ -13,10 +14,9 @@
     
     <!-- navbar -->
     
-
-    <header class="flex items-center header  lg:justify-between justify-center ">
-<div class="list-section1  hidden md:block">
-    <ul class="flex gap-5 text-gray-600 items-center font-semibold text-[13px]">
+<header class=" flex items-center header lg:justify-between justify-center ">
+<div class="list-section1  hidden lg:block">
+    <ul class="flex   items-center font-semibold text-[12px]">
         <li><a>VEHICLES</a>
         </li>
         <li><a>OWNERS</a></li>
@@ -27,18 +27,54 @@
 </div>
 
 <div class="logo">
-    <img src="https://static.vecteezy.com/system/resources/previews/020/500/681/non_2x/range-rover-brand-logo-car-symbol-name-black-design-british-automobile-illustration-free-vector.jpg" width="120px"  alt="">
+    <img src="./assets/logo.svg" width="200px"  alt="">
 </div>
 
-<div class="list-section2 md:block  hidden ">
-    <ul class="flex gap-5 text-gray-600 items-center font-semibold text-[13px]">
-        <li><a> RETAILERS</a></li>
-        <li><a>BUILDS</a></li>
-        <li><a>SUPPORT</a></li>
-        <li> |</li>
-        <li><a>SHOP NOW</a></li>
+<div class="list-section2  lg:flex gap-7 items-center  hidden ">
+   <div>
+     <ul class="flex  unordered-list-2   items-center font-semibold text-[12px]">
+         <li><a>
+        <div>
+            <i class="fa-solid fa-store"></i>
+        </div>    
+        <div>
+            RETAILERS
+        </div>
+            
+            
+        </a></li>
+        <li><a>
+        <div>
+            <i class="fa-regular fa-bookmark"></i>
+        </div>    
+        <div>
+            BUILDS
+        </div>
+            
+            
+        </a></li>
+         <li><a>
+        <div>
+            <i class="fa-solid fa-handshake-angle"></i>
+        </div>    
+        <div>
+            SUPPORT
+        </div>
+            
+           
+        </a></li>
+       
     </ul>
+   </div>
+
+    <div class="searchBar " >
+ <i class="fa-solid fa-magnifying-glass"></i>
 </div>
+</div>
+
+
+
+
 
     </header>
 
@@ -56,5 +92,121 @@
 
 
 
+<!-- Card Section 1 -->
+
+
+<div class="container py-5 ">
+
+   
+
+ <div class="row  card-section1  ">
+
+    <div class="card-1 col-sm-12 col-md-6 col-lg-3  flex flex-col gap-3">
+<div class="card-img">
+    <img width="100%" src="./assets/card 1 img 1.jpg" >
+</div>
+
+<div class="card-content flex flex-col gap-3">
+<h3>
+    RANGE ROVER
+</h3>
+
+<p>
+Go anywhere, composed everywhere.
+</p>
+
+</div>
+<div class="card-btn">
+    <button>
+        <i class="fa-solid fa-arrow-right-long"></i>
+            EXPLORE
+    </button>
+</div>
+    </div>
+
+
+<div class="card-2 col-sm-12 col-md-6 col-lg-3  flex flex-col gap-3">
+<div class="card-img">
+    <img width="100%" src="./assets/card 1 img 1.jpg" >
+</div>
+
+<div class="card-content flex flex-col gap-3">
+<h3>
+    RANGE ROVER
+</h3>
+
+<p>
+Go anywhere, composed everywhere.
+</p>
+
+</div>
+<div class="card-btn">
+    <button>
+        <i class="fa-solid fa-arrow-right-long"></i>
+            EXPLORE
+    </button>
+</div>
+    </div>
+
+
+<div class="card-3 col-sm-12 col-md-6 col-lg-3  flex flex-col gap-3">
+<div class="card-img">
+    <img width="100%" src="./assets/card 1 img 1.jpg" >
+</div>
+
+<div class="card-content flex flex-col gap-3">
+<h3>
+    RANGE ROVER
+</h3>
+
+<p>
+Go anywhere, composed everywhere.
+</p>
+
+</div>
+<div class="card-btn">
+    <button>
+        <i class="fa-solid fa-arrow-right-long"></i>
+            EXPLORE
+    </button>
+</div>
+    </div>
+
+    <div class="card-4 col-sm-12 col-md-6 col-lg-3  flex flex-col gap-3">
+<div class="card-img">
+    <img width="100%" src="./assets/card 1 img 1.jpg" >
+</div>
+
+<div class="card-content flex flex-col gap-3">
+<h3>
+    RANGE ROVER
+</h3>
+
+<p>
+Go anywhere, composed everywhere.
+</p>
+
+</div>
+<div class="card-btn">
+    <button>
+        <i class="fa-solid fa-arrow-right-long"></i>
+            EXPLORE
+    </button>
+</div>
+    </div>
+
+
+</div>
+
+ 
+
+
+
+
+   
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

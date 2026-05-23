@@ -1,15 +1,74 @@
+:root{
+    --primary-color: #4A4f54;
+    --secondary-color: #e0e0e0;
+    --dark-color:black;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h3{
+    font-size: 18px;
+    color:black;
+    font-weight:600;
+}
+p{
+    color: var(--primary-color);
+}
+
+button{
+    background-color:var(--dark-color);
+    padding: 10px 20px;
+color: white;
+font-weight:650;
+display:flex;
+gap:10px;
+justify-content:center;
+align-items:center;
+font-size: 12px;
+letter-spacing:1px;
+transition:all 0.3s ease;
+border:1px solid var(--dark-color);
+}
+
+button:hover{
+    background-color:white;
+    color:var(--dark-color);
+    border:1px solid var(--dark-color);
+}
 
 /* navbar */
 
 .header{
-    padding: 0px 30px;
+    padding:0px 20px;
+    color: var(--primary-color)
 }
+.list-section1 li a, .list-section2 li a{
+    letter-spacing: 1px;
+   
+}
+ .list-section2 li, .list-section1 li{
+    padding: 20px 20px;
+    
+    transition: all 0.3s ease;
+}
+
+.list-section1 li{
+    padding:20px 15px
+}
+.list-section1 li:hover, .list-section2 li:hover{
+    background-color: var(--secondary-color);
+   
+}
+.unordered-list-2 li a{
+    display:flex;
+    gap:8px
+}
+
+/* hero section */
 
 .heroImage{
     background-image: url("./assets/range\ hero.jpg");
@@ -19,3 +78,12 @@
     object-fit: contain;
 }
 
+/* card section 1 */
+
+/* .container{
+    padding:50px 50px;
+} */
+
+.card-img img{
+    object-fit:cover!important;
+}
