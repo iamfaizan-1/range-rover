@@ -1,6 +1,6 @@
 :root{
     --primary-color: #4A4f54;
-    --secondary-color: #e0e0e0;
+    --secondary-color: #f7f7f7;
     --dark-color:black;
 }
 
@@ -15,6 +15,10 @@ h3{
     color:black;
     font-weight:600;
 }
+h2{
+    font-size:30px;
+    font-weight:600;
+}
 p{
     color: var(--primary-color);
 }
@@ -23,7 +27,7 @@ button{
     background-color:var(--dark-color);
     padding: 10px 20px;
 color: white;
-font-weight:650;
+font-weight:600;
 display:flex;
 gap:10px;
 justify-content:center;
@@ -43,11 +47,17 @@ button:hover{
 /* navbar */
 
 .header{
-    padding:0px 20px;
+    height: 58px;
     color: var(--primary-color)
 }
+.pipe:hover{
+    background-color:none!important;
+
+}
+
 .list-section1 li a, .list-section2 li a{
     letter-spacing: 1px;
+  
    
 }
  .list-section2 li, .list-section1 li{
@@ -83,7 +93,45 @@ button:hover{
 /* .container{
     padding:50px 50px;
 } */
+.card-section-1{
+    padding:50px ;
+    background-color:var(--secondary-color);
+}
 
 .card-img img{
     object-fit:cover!important;
 }
+.card-1,.card-2,.card-3,.card-4{
+    transition:all 0.3s ease-in-out;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover {
+    transform: scale(1.01);
+}
+
+
+/* hero section 2 */
+
+
+.img-section{
+background-image:url("./assets/hero2\ poster.avif");
+height:500px;
+background-size:cover;
+object-fit:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.explore-link{
+font-size:12px;
+letter-spacing:1px;
+font-weight:600;
+}
+.explore-link:hover{
+    text-decoration:underline;
+}
+
+.find-btn{
+    width:200px
+}
+
