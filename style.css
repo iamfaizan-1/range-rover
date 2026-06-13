@@ -4,11 +4,7 @@
     --dark-color:black;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body{
      font-family: "Poppins", sans-serif;
@@ -54,6 +50,37 @@ button:hover{
 
 /* navbar */
 
+/* .rotate-180{
+    transition:all 0.3s ease;
+    transform: rotate(180);
+}
+
+.rotate-360{
+    transition:all 0.3s ease;
+    transform: rotate(360)
+} */
+.hide{
+    opacity:0;
+    visibility:hidden;
+    transform:scaleY(0);
+}
+
+.show{
+    opacity:1;
+    visibility:visible;
+    transform:scaleY(1);
+}
+
+
+#mobile-list{
+    transform-origin: top;
+    transition: all 0.3s ease;
+}
+
+
+#bars{
+    transition: transform 0.3s ease;
+}
 .header{
     height: 58px;
     color: var(--primary-color)

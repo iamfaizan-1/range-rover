@@ -1,494 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-   
+
     <link rel="stylesheet" href="style.css">
-        
 
-<!-- google fonts -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google fonts -->
 
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
 </head>
+
 <body>
-    
+
     <!-- navbar -->
-    
-<header class=" flex items-center header lg:justify-between justify-center px-4 ">
-<div class="list-section1  hidden lg:block ">
-    <ul class="flex px-0 items-center mb-0 font-semibold text-[12px]">
-        <li><a>VEHICLES</a>
-        </li>
-        <li><a>OWNERS</a></li>
-        <li><a>EXPLORE</a></li>
-        <li class="pipe" > |</li>
-        <li><a>SHOP NOW</a></li>
-    </ul>
-</div>
 
-<div class="logo">
-    <img src="./assets/logo.svg" width="200px"   alt="">
-</div>
+    <header class="flex navbar items-center header lg:justify-between justify-center px-5">
 
-<div class="list-section2  lg:flex gap-7 items-center  hidden ">
-   <div>
-     <ul class="flex  unordered-list-2 mb-0  items-center font-semibold text-[12px]">
-         <li><a>
-        <div>
-            <i class="fa-solid fa-store"></i>
-        </div>    
-        <div>
-            RETAILERS
+
+        <div class="list-section1 hidden lg:block">
+
+            <ul class="flex items-center mb-0 font-semibold text-[12px]">
+
+                <li><a>VEHICLES</a></li>
+                <li><a>OWNERS</a></li>
+                <li><a>EXPLORE</a></li>
+                <li class="pipe">|</li>
+                <li><a>SHOP NOW</a></li>
+
+            </ul>
+
         </div>
-            
-            
-        </a></li>
-        <li><a>
-        <div>
-            <i class="fa-regular fa-bookmark"></i>
-        </div>    
-        <div>
-            BUILDS
+
+
+
+        <div class="logo   ">
+
+            <img src="./assets/logo.svg" width="200px" alt="">
+
         </div>
-            
-            
-        </a></li>
-         <li><a>
-        <div>
-            <i class="fa-solid fa-handshake-angle"></i>
-        </div>    
-        <div>
-            SUPPORT
+
+
+
+
+        <div class="list-section2 lg:flex gap-7 items-center hidden">
+
+            <ul class="flex unordered-list-2 mb-0 items-center font-semibold text-[12px]">
+
+
+                <li>
+                    <a>
+                        <i class="fa-solid fa-store"></i>
+                        RETAILERS
+                    </a>
+                </li>
+
+
+                <li>
+                    <a>
+                        <i class="fa-regular fa-bookmark"></i>
+                        BUILDS
+                    </a>
+                </li>
+
+
+                <li>
+                    <a>
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        SUPPORT
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+            <div class="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+
         </div>
-            
-           
-        </a></li>
-       
-    </ul>
-   </div>
-
-    <div class="searchBar " >
- <i class="fa-solid fa-magnifying-glass"></i>
-</div>
-</div>
 
 
 
+        <div id="bars" class="ms-auto md:hidden block cursor-pointer">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
 
 
     </header>
 
 
+
+
+    <!-- MOBILE MENU -->
+
+    <ul id="mobile-list" class="
+absolute top-[56px] left-0 z-[20]
+bg-white w-full py-5
+flex flex-col gap-5
+justify-center items-center
+
+hide
+
+">
+
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+
+    </ul>
+
+
+
+
+    <script src="./script.js"></script>
+
+
+
     <!-- hero section -->
 
-<div class="hero-section">
+    <div class="hero-section">
 
-<div class="heroImage">
+        <div class="heroImage">
 
-</div>
-
-
-</div>
+        </div>
 
 
-
-<!-- Card Section 1 -->
-
-
-
-<div class="card-section-1  grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-    <div class="card-1  flex flex-col gap-5">
-<div class="card-img">
-    <img width="100%" src="./assets/card 1 img 1.jpg" >
-</div>
-
-<div class="card-content flex flex-col gap-3">
-<h3>
-    RANGE ROVER
-</h3>
-
-<p>
-Go anywhere, composed everywhere.
-</p>
-
-</div>
-<div class="card-btn">
-    <button>
-        <i class="fa-solid fa-arrow-right-long"></i>
-            EXPLORE
-    </button>
-</div>
-    </div>
-
-
-<div class="card-1  flex flex-col gap-5">
-<div class="card-img">
-    <img width="100%" src="./assets/card 1 img 1.jpg" >
-</div>
-
-<div class="card-content flex flex-col gap-3">
-<h3>
-    RANGE ROVER
-</h3>
-
-<p>
-Go anywhere, composed everywhere.
-</p>
-
-</div>
-<div class="card-btn">
-    <button>
-        <i class="fa-solid fa-arrow-right-long"></i>
-            EXPLORE
-    </button>
-</div>
-    </div>
-
-
-<div class="card-1  flex flex-col gap-5">
-<div class="card-img">
-    <img width="100%" src="./assets/card 1 img 1.jpg" >
-</div>
-
-<div class="card-content flex flex-col gap-5">
-<h3>
-    RANGE ROVER
-</h3>
-
-<p>
-Go anywhere, composed everywhere.
-</p>
-
-</div>
-<div class="card-btn">
-    <button>
-        <i class="fa-solid fa-arrow-right-long"></i>
-            EXPLORE
-    </button>
-</div>
     </div>
 
 
 
-    <div class="card-1  flex flex-col gap-5">
-<div class="card-img">
-    <img width="100%" src="./assets/card 1 img 1.jpg" >
-</div>
-
-<div class="card-content flex flex-col gap-3">
-<h3>
-    RANGE ROVER
-</h3>
-
-<p>
-Go anywhere, composed everywhere.
-</p>
-
-</div>
-<div class="card-btn">
-    <button>
-        <i class="fa-solid fa-arrow-right-long"></i>
-            EXPLORE
-    </button>
-</div>
-    </div>
-
-
-</div>
+    <!-- Card Section 1 -->
 
 
 
-<!-- hero 2 -->
-
-<div class="hero-section-2 grid lg:grid-cols-12 grid-cols-1 gap-8 ">
-
-<div class="img-section lg:col-span-8 col-span-1">
-
-</div>
-
-<div class="hero2-content lg:col-span-4 col-span-1 flex flex-col gap-5">
-    <h2>
-        THE BEST SEAT IN THE HOUSE
-    </h2>
-    <p>
-        A new standard for in-car audio reaches its crescendo with the introduction of Electrostatic technology.
-    </p>
-     <button class="find-btn">
-        <i class="fa-solid fa-arrow-right-long"></i>
-            FIND OUT MORE
-    </button>
-
-    <a class="explore-link" href="#">
-        <i class="fa-solid fa-angle-right"></i>
-        EXPLORE RANGE ROVER SV
-    </a>
-</div>
-
-
-
-</div>
-
-
-
-<!-- card section 2 -->
-
-<div class="card-section-2 ">
-    <div class="left-section flex gap-5 flex-col justify-center">
-        <h1>
-        RANGE ROVER
-    </h1>
-    <p>
-        GO anywhere, composed everywhere
-    </p>
-     <button class="find-btn">
-        <i class="fa-solid fa-arrow-right-long"></i>
-            EXPLORE
-    </button>
-    <a class="explore-link" href="#">
-        <i class="fa-solid fa-angle-right"></i>
-        BUILD YOUR OWN
-    </a>
-    </div>
-
-
-    <div class="right-section">
-        <div class="right-section-1">
-<div class="right-img-1">
-<img width="100%" height="100%" src="./assets/card-sec-2-img-1.avif" >
-</div>
-<div class="right-img-2">
-<img width="100%" height="100%" src="./assets/card-sec-2-img-2.avif" >
-</div>
-        </div>
-        <div class="right-section-2">
-<div class="right-img-3">
-    
-</div>
-
-<div class="right-img-4">
-   
-</div>
-        </div>
-    </div>
-</div>
-
-
-
-<!--Range Rover sport -->
-
-
-<div class="Range-Rover-Sport ">
-    <div class="left-sport ">
-<div class="left-sport-sec1">
-
-<div class="sport-img-1">
-
-</div>
-<div class="sport-img-2">
-
-</div>
-</div>
-<div class="left-sport-sec2 grid grid-cols-2 gap-5">
-<div class="sport-img-3">
-
-</div>
-<div class="sport-img-4">
-
-</div>
-</div>
-    </div>
-    <div class="right-sport">
-       <h1>
-        RANGE ROVER SPORT
-    </h1>
-    <p>
-        GO anywhere, composed everywhere
-    </p>
-     <button class="find-btn">
-        <i class="fa-solid fa-arrow-right-long"></i>
-            EXPLORE
-    </button>
-    <a class="explore-link" href="#">
-        <i class="fa-solid fa-angle-right"></i>
-        BUILD YOUR OWN
-    </a>
-    </div>
-</div>
-
-<!-- Range Rover Velar -->
-
-
-<div class="Range-Rover-Velar ">
-    <div class="Velar-left-section flex gap-5 flex-col justify-center">
-        <h1>
-        RANGE ROVER VELAR
-    </h1>
-    <p>
-        GO anywhere, composed everywhere
-    </p>
-     <button class="find-btn">
-        <i class="fa-solid fa-arrow-right-long"></i>
-            EXPLORE
-    </button>
-    <a class="explore-link" href="#">
-        <i class="fa-solid fa-angle-right"></i>
-        BUILD YOUR OWN
-    </a>
-    </div>
-
-
-    <div class="Velar-right-section">
-        <div class="velar-right-section-1">
-<div class="velar-right-img-1">
-
-</div>
-<div class="velar-right-img-2">
-
-</div>
-        </div>
-        <div class="velar-right-section-2">
-<div class="velar-right-img-3">
-    
-</div>
-
-<div class="velar-right-img-4">
-   
-</div>
-        </div>
-    </div>
-</div>
-
-
-<!-- footer -->
-
-<div class="footer grid grid-cols-4">
-    <div class="footer-section1">
-        <div class="footerHead">
-            <h6>
-                VEHICLES
-            </h6>
-        </div>
-        <div class="footer-list">
-            <ul>
-                <li><a>RANGE ROVER</a></li>
-                <li><a>RANGE ROVER SPORT</a></li>
-                <li><a>RANGE ROVER VELAR</a></li>
-                <li><a>RANGE ROVER EVOQUE</a></li>
-                <li><a>SV</a></li>
-                <li><a>FLEET AND BUSINESS</a></li>
-                <li><a>DIPLOMATIC SALES</a></li>
-                <li><a>BOOK A TEST DRIVE</a></li>
-            </ul>
-        </div>
-    </div>
-
-<div class="footer-section2 flex flex-col gap-5">
-       <div class="ownership-section">
-         <div class="footerHead">
-            <h6>
-                OWNERSHIP
-            </h6>
-        </div>
-        <div class="footer-list">
-            <ul>
-                <li><a>OWNERSHIP SERVICES</a></li>
-                <li><a>INCONTROL</a></li>
-                <li><a>SOFTWARE UPDATES</a></li>
-              
-            </ul>
-        </div>
-       </div>
-
-
-<div class="about-section">
-     <div class="footerHead">
-            <h6>
-                ABOUT US
-            </h6>
-        </div>
-        <div class="footer-list">
-            <ul>
-                <li><a>JLR</a></li>
-                <li><a>SUSTAINABILITY</a></li>
-                <li><a>VEHICLE DATA EMISSIONS</a></li>
-              
-            </ul>
-        </div>
-
-</div>
-    </div>
-
-
-<div class="footer-section3">
-        <div class="footerHead">
-            <h6>
-                OUR BRANDS
-            </h6>
-        </div>
-        <div class="footer-list">
-            <ul>
-                <li><a>RANGE ROVER</a></li>
-                <li><a>DEFENDER</a></li>
-                <li><a>DISCOVERY</a></li>
-                <li><a>JAGUAR</a></li>
-
-              
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer-section4">
-        <div class="footerHead">
-            <h6>JOIN THE CONVERSATION</h6>
-        </div>
-        <div class="footer-social flex flex-col gap-3">
-            <div class="insta flex items-center gap-3">
-                <div class="social-icon">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="social-name ">
-                    INSTAGRAM
-                </div>
-            </div>
-            <div class="facebook flex  items-center gap-3">
-<div class="social-icon">
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-                <div class="social-name">
-                    FACEBOOK
-                </div>
-            </div>
-            <div class="tiktok flex  items-center gap-3">
-<div class="social-icon">
-                    <i class="fa-brands fa-tiktok"></i>
-                </div>
-                <div class="social-name">
-                    TIKTOK
-                </div>
+    <div class="card-section-1  grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="card-1  flex flex-col gap-5">
+            <div class="card-img">
+                <img width="100%" src="./assets/card 1 img 1.jpg">
             </div>
 
-            <div class="youtube  items-center flex gap-3">
-<div class="social-icon">
-                    <i class="fa-brands fa-youtube"></i>
+            <div class="card-content flex flex-col gap-3">
+                <h3>
+                    RANGE ROVER
+                </h3>
+
+                <p>
+                    Go anywhere, composed everywhere.
+                </p>
+
+            </div>
+            <div class="card-btn">
+                <button>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    EXPLORE
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card-1  flex flex-col gap-5">
+            <div class="card-img">
+                <img width="100%" src="./assets/card 1 img 1.jpg">
+            </div>
+
+            <div class="card-content flex flex-col gap-3">
+                <h3>
+                    RANGE ROVER
+                </h3>
+
+                <p>
+                    Go anywhere, composed everywhere.
+                </p>
+
+            </div>
+            <div class="card-btn">
+                <button>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    EXPLORE
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card-1  flex flex-col gap-5">
+            <div class="card-img">
+                <img width="100%" src="./assets/card 1 img 1.jpg">
+            </div>
+
+            <div class="card-content flex flex-col gap-5">
+                <h3>
+                    RANGE ROVER
+                </h3>
+
+                <p>
+                    Go anywhere, composed everywhere.
+                </p>
+
+            </div>
+            <div class="card-btn">
+                <button>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    EXPLORE
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="card-1  flex flex-col gap-5">
+            <div class="card-img">
+                <img width="100%" src="./assets/card 1 img 1.jpg">
+            </div>
+
+            <div class="card-content flex flex-col gap-3">
+                <h3>
+                    RANGE ROVER
+                </h3>
+
+                <p>
+                    Go anywhere, composed everywhere.
+                </p>
+
+            </div>
+            <div class="card-btn">
+                <button>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    EXPLORE
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- hero 2 -->
+
+    <div class="hero-section-2 grid lg:grid-cols-12 grid-cols-1 gap-8 ">
+
+        <div class="img-section lg:col-span-8 col-span-1">
+
+        </div>
+
+        <div class="hero2-content lg:col-span-4 col-span-1 flex flex-col gap-5">
+            <h2>
+                THE BEST SEAT IN THE HOUSE
+            </h2>
+            <p>
+                A new standard for in-car audio reaches its crescendo with the introduction of Electrostatic technology.
+            </p>
+            <button class="find-btn">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                FIND OUT MORE
+            </button>
+
+            <a class="explore-link" href="#">
+                <i class="fa-solid fa-angle-right"></i>
+                EXPLORE RANGE ROVER SV
+            </a>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- card section 2 -->
+
+    <div class="card-section-2 ">
+        <div class="left-section flex gap-5 flex-col justify-center">
+            <h1>
+                RANGE ROVER
+            </h1>
+            <p>
+                GO anywhere, composed everywhere
+            </p>
+            <button class="find-btn">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                EXPLORE
+            </button>
+            <a class="explore-link" href="#">
+                <i class="fa-solid fa-angle-right"></i>
+                BUILD YOUR OWN
+            </a>
+        </div>
+
+
+        <div class="right-section">
+            <div class="right-section-1">
+                <div class="right-img-1">
+                    <img width="100%" height="100%" src="./assets/card-sec-2-img-1.avif">
                 </div>
-                <div class="social-name">
-                    YOUTUBE
+                <div class="right-img-2">
+                    <img width="100%" height="100%" src="./assets/card-sec-2-img-2.avif">
+                </div>
+            </div>
+            <div class="right-section-2">
+                <div class="right-img-3">
+
+                </div>
+
+                <div class="right-img-4">
+
                 </div>
             </div>
         </div>
     </div>
 
-</div>
 
 
+    <!--Range Rover sport -->
 
+
+    <div class="Range-Rover-Sport ">
+        <div class="left-sport ">
+            <div class="left-sport-sec1">
+
+                <div class="sport-img-1">
+
+                </div>
+                <div class="sport-img-2">
+
+                </div>
+            </div>
+            <div class="left-sport-sec2 grid grid-cols-2 gap-5">
+                <div class="sport-img-3">
+
+                </div>
+                <div class="sport-img-4">
+
+                </div>
+            </div>
+        </div>
+        <div class="right-sport">
+            <h1>
+                RANGE ROVER SPORT
+            </h1>
+            <p>
+                GO anywhere, composed everywhere
+            </p>
+            <button class="find-btn">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                EXPLORE
+            </button>
+            <a class="explore-link" href="#">
+                <i class="fa-solid fa-angle-right"></i>
+                BUILD YOUR OWN
+            </a>
+        </div>
+    </div>
+
+    <!-- Range Rover Velar -->
+
+
+    <div class="Range-Rover-Velar ">
+        <div class="Velar-left-section flex gap-5 flex-col justify-center">
+            <h1>
+                RANGE ROVER VELAR
+            </h1>
+            <p>
+                GO anywhere, composed everywhere
+            </p>
+            <button class="find-btn">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                EXPLORE
+            </button>
+            <a class="explore-link" href="#">
+                <i class="fa-solid fa-angle-right"></i>
+                BUILD YOUR OWN
+            </a>
+        </div>
+
+
+        <div class="Velar-right-section">
+            <div class="velar-right-section-1">
+                <div class="velar-right-img-1">
+
+                </div>
+                <div class="velar-right-img-2">
+
+                </div>
+            </div>
+            <div class="velar-right-section-2">
+                <div class="velar-right-img-3">
+
+                </div>
+
+                <div class="velar-right-img-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer grid grid-cols-4">
+        <div class="footer-section1">
+            <div class="footerHead">
+                <h6>
+                    VEHICLES
+                </h6>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li><a>RANGE ROVER</a></li>
+                    <li><a>RANGE ROVER SPORT</a></li>
+                    <li><a>RANGE ROVER VELAR</a></li>
+                    <li><a>RANGE ROVER EVOQUE</a></li>
+                    <li><a>SV</a></li>
+                    <li><a>FLEET AND BUSINESS</a></li>
+                    <li><a>DIPLOMATIC SALES</a></li>
+                    <li><a>BOOK A TEST DRIVE</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section2 flex flex-col gap-5">
+            <div class="ownership-section">
+                <div class="footerHead">
+                    <h6>
+                        OWNERSHIP
+                    </h6>
+                </div>
+                <div class="footer-list">
+                    <ul>
+                        <li><a>OWNERSHIP SERVICES</a></li>
+                        <li><a>INCONTROL</a></li>
+                        <li><a>SOFTWARE UPDATES</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="about-section">
+                <div class="footerHead">
+                    <h6>
+                        ABOUT US
+                    </h6>
+                </div>
+                <div class="footer-list">
+                    <ul>
+                        <li><a>JLR</a></li>
+                        <li><a>SUSTAINABILITY</a></li>
+                        <li><a>VEHICLE DATA EMISSIONS</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer-section3">
+            <div class="footerHead">
+                <h6>
+                    OUR BRANDS
+                </h6>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li><a>RANGE ROVER</a></li>
+                    <li><a>DEFENDER</a></li>
+                    <li><a>DISCOVERY</a></li>
+                    <li><a>JAGUAR</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section4">
+            <div class="footerHead">
+                <h6>JOIN THE CONVERSATION</h6>
+            </div>
+            <div class="footer-social flex flex-col gap-3">
+                <div class="insta flex items-center gap-3">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="social-name ">
+                        INSTAGRAM
+                    </div>
+                </div>
+                <div class="facebook flex  items-center gap-3">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="social-name">
+                        FACEBOOK
+                    </div>
+                </div>
+                <div class="tiktok flex  items-center gap-3">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div class="social-name">
+                        TIKTOK
+                    </div>
+                </div>
+
+                <div class="youtube  items-center flex gap-3">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="social-name">
+                        YOUTUBE
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"> </script>
 </body>
+
 </html>
